@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form contato</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <form action="" name="contato">
+        <h3>Entrar em contato</h3>
+        <input type="text" name="e-mail" id="e-mail" placeholder="Seu e-mail...">
+        <input type="password" name="senha" id="password" placeholder="Insira a senha">
+        <input type="submit" value="Enviar" name="acao">
+
+    </form>
+    <script>
+        var email = document.getElementById('e-mail');
+        var password = document.getElementById('password');
+        email.addEventListener('focus', () => {
+            email.style.borderColor = "#39515d"
+        });
+        email.addEventListener('blur', () => {
+            email.style.borderColor = "#ccc"
+        });
+        password.addEventListener('focus', () => {
+            password.style.borderColor = "#39515d"
+        });
+        password.addEventListener('blur', () => {
+            password.style.borderColor = "#ccc"
+        });
+    </script>
+</body>
+
+</html>
