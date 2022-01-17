@@ -17,6 +17,7 @@ form {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 20px;
 }
 
 form h3 {
@@ -34,7 +35,8 @@ form input[type=password] {
     margin: 10px 0;
 }
 
-form input[type=submit] {
+form input[type=submit],
+form input[type=button] {
     width: 100%;
     height: 40px;
     cursor: pointer;
@@ -45,14 +47,21 @@ form input[type=submit] {
     transition: 1s;
 }
 
-form input[type=submit]:hover {
+form input[type=submit]:hover,
+form input[type=button]:hover {
     background-color: #39515d;
 }
 
-form input[type=email]:focus {
+form input[type=button] {
+    margin-top: 10px;
+}
+
+form input[type=email]:focus,
+form input[type=password]:focus {
     outline: 0;
 }
 
-form input[type=password]:focus {
-    outline: 0;
+form p {
+    text-align: center;
+    margin-top: 10px;
 }
